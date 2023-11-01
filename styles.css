@@ -41,7 +41,7 @@ header a {
 /* Nav Menu Style */
 nav ul {
     list-style: none;
-    padding-top: 1em;
+    padding-top: 2em;
     
 }
 
@@ -123,6 +123,13 @@ nav ul li {
     background: url(/images/hero-home.jpg)center/cover no-repeat;
     padding: 10em;
     justify-content: center;
+}
+
+.next-text {
+    color: #286161;
+    font-style: oblique;
+    font-weight: 600;
+    opacity: 90%;
 }
 
 /* call-to-action button */
@@ -214,7 +221,7 @@ nav ul li {
     margin-bottom: 10px;
 }
 
-/* portfolio section style */
+/* recommends section style */
 .recommendations {
     background-color: #fff;
     padding: 60px 0;
@@ -271,7 +278,7 @@ footer {
 .container-nav {
     display: flex;
     justify-content: space-evenly;
-    padding: 25px 0;
+    padding: 5px 0;
 }
 
 
@@ -286,10 +293,24 @@ footer {
 
 /* ARTS AND CULTURE PAGE styles */
 
+
+
 .container-spotlight {
     display: block;
     justify-content: space-evenly;
     padding: 5em;
+}
+
+.page-nav {
+    font-weight: 200;
+    display: block;
+    align-self: right;
+    margin: 1em;
+    padding-left: 10em;
+}
+
+.nav-text {
+    color: #43a9a9;
 }
 
 .container-culture-hero {
@@ -312,9 +333,27 @@ footer {
 }
 
 .bookclub {
-    max-width: 100%;
-    height: auto;
     display: block;
+    max-width: 50%;
+    height: auto;
+    margin: 2em;
+}
+
+.bc-text {
+    margin: 2em;
+}
+
+.info-flex {
+    display: grid;
+    justify-content: right;
+    margin: 1em;
+}
+
+.stars {
+    max-width: 50%;
+    height: auto;
+    display: flex;
+    justify-content:right;
 }
 
 .flexbox {
@@ -340,7 +379,7 @@ footer {
 }
 
 .culture-text {
-    color: #ccc;
+    color: #144F4F;
     font-style: oblique;
     opacity: 70%;
 }
@@ -360,6 +399,10 @@ footer {
     padding: 20px;
     text-align: center;
 }
+
+
+
+
 /* Media Queries
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /*
