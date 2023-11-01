@@ -51,6 +51,11 @@ nav ul li {
     margin-right: 20px;
 }
 
+.account-icon {
+    width: 5%;
+    height: auto;
+}
+
 /* Search Bar style */
 .search-bar {
     display: flex;
@@ -276,6 +281,85 @@ footer {
     padding: 5em;
 }
 
+
+
+
+/* ARTS AND CULTURE PAGE styles */
+
+.container-spotlight {
+    display: block;
+    justify-content: space-evenly;
+    padding: 5em;
+}
+
+.container-culture-hero {
+    background: url(/images/hero-hpbc.jpg)center/cover no-repeat;
+    padding: 10em;
+    justify-content: center;
+}
+
+.hero-container {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    align-items: center;
+}
+
+.hero-image {
+    background-image: url('hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    grid-column: span 8;
+}
+
+.bookclub {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.flexbox {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    justify-content: flex-end; 
+}
+
+.icon {
+    flex: 1;
+    text-align: center;
+    margin-left: 20px;
+}
+
+.icon img {
+    max-width: 50px;
+}
+
+.text {
+    flex: 3;
+    padding: 0 20px;
+}
+
+.culture-text {
+    color: #ccc;
+    font-style: oblique;
+    opacity: 70%;
+}
+
+/* user Reviews flex */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.flex-box {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+}
 /* Media Queries
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /*
