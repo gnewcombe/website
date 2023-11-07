@@ -299,6 +299,7 @@ p {
 
 /* services section style */
 
+/* Default styles for desktop and larger screens */
 .image-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -308,10 +309,20 @@ p {
     margin: 0 auto;
 }
 
+/* Media query for screens with a maximum width of 768px (typical mobile width) */
+@media screen and (max-width: 768px) {
+    .image-grid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px; 
+    }
+}
+
 .image-container {
     position: relative;
     overflow: hidden;
     border-radius: 25px;
+    font-size: 80px;
+    margin-bottom: .5em;
 }
 
 .image-container img {
@@ -325,10 +336,10 @@ p {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.5);
     color: #fff;
     padding: 10px 20px;
-    border-radius: 5px;
+    border-radius: 10px;
     text-align: center;
     opacity: 0;
     transition: opacity 0.3s;
