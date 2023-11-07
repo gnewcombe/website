@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.typekit.net/kqc5tzy.css">
+    <link rel="stylesheet" href="https://use.typekit.net/xbx5mdl.css">
+    <link rel="icon" href="/images/SVG/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="js/script.js">
+    <title>YOUNG AT 'ART</title>
+</head>
+
+<body>
+    <header>
+        <div class="container-nav">
+            <img src="/images/SVG/svg-white.svg" alt="Logo" class="logo">
+            <nav>
+                <button class="hamburger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul>
+                    <li><a href="#" class="close-menu">Close</a></li>
+                    <li><a href="arts-culture.html">Arts&Culture</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="#">Shopping</a></li>
+                    <li><a href="plan.html">Plan</a></li>
+                    <li><a href="index.html">
+                        <img src="images/SVG/icon-account.svg" alt="account icon" class="account-icon">
+                    </a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Search...">
+            <select id="filter">
+                <option value="all">All</option>
+                <option value="option1">Ratings</option>
+                <option value="option2">Distance</option>
+                <option value="option3">Avg. Cost</option>
+            </select>
+            <button id="search-button">Search</button>
+        </div>
+    </header>
+
+    <div class="hero-image">
+        <div class="hero-background-plan"></div>
+        <div class="overlay-text">plan</div>
+    </div>
+
+    <div class="page-nav">
+        <h2>Home > <span class="nav-text">plan</span></h2>
+    </div>
+
+    <section class="plan-section">
+        <h1>plan your trip</h1>
+        
+        <div class="input-wrapper">  <!-- New Wrapper for Activity -->
+            <label for="activity">Activity</label>
+            <input type="text" id="activity" placeholder="e.g. culture lover, foodie, family, heritage">
+        </div>
+        
+        <div class="date-wrapper">  <!-- New Wrapper for Dates -->
+            <label for="start-date">Start Date</label>
+            <input type="date" id="start-date">
+            <label for="end-date">End Date</label>
+            <input type="date" id="end-date">
+        </div>
+        
+        <button class="start-button">start planning</button>
+    </section>
+
+    <h2 class="explore-title">explore</h2>
+        <div class="explore-section">
+            <div class="explore-item upcoming-events">Upcoming Events</div>
+            <div class="explore-item new-spaces">New Spaces</div>
+            <div class="explore-item popular-spots">Popular Spots</div>
+        </div>
+
+        <section class="contact">
+            <div class="container">
+                <img src="images/SVG/sign-in.svg" alt="sign in icon" class="sign-img">
+                <h2>Save your dream trip</h2>
+                <p>Make an account for free and start making memories gain access to monthly newsletters & more..</p>
+                <button class="sign-up">sign up</button>
+                <!-- Add contact form or contact information here -->
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-container">
+                <p>&copy; 2023 GGDMN. All Rights Reserved.</p>
+            </div>
+        </footer>
+    <!-- JavaScript scripts here -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>

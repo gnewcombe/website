@@ -45,3 +45,17 @@ function displayResults(results) {
         resultsContainer.appendChild(resultElement);
     });
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    const hamburger = document.querySelector('.hamburger-menu');
+    const navMenu = document.querySelector('.container-nav ul');
+    const closeButton = document.querySelector('.close-menu');
+
+    hamburger.addEventListener('click', () => {
+        navMenu.classList.toggle('show');
+    });
+
+    closeButton.addEventListener('click', () => {
+        navMenu.classList.remove('show');
+    });
+});

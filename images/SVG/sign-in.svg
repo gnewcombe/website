@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="298" height="298" viewBox="0 0 298 298">
+  <g id="sign-in" transform="translate(-831 -11665)">
+    <g id="Ellipse_26" data-name="Ellipse 26" transform="translate(831 11665)" fill="#fff" stroke="#707070" stroke-width="1">
+      <circle cx="149" cy="149" r="149" stroke="none"/>
+      <circle cx="149" cy="149" r="148.5" fill="none"/>
+    </g>
+    <path id="Icon_material-account-circle" data-name="Icon material-account-circle" d="M152,3A149,149,0,1,0,301,152,149.054,149.054,0,0,0,152,3Zm0,44.7a44.7,44.7,0,1,1-44.7,44.7A44.64,44.64,0,0,1,152,47.7Zm0,211.58A107.288,107.288,0,0,1,62.6,211.3c.447-29.651,59.6-45.892,89.4-45.892,29.651,0,88.953,16.241,89.4,45.892A107.288,107.288,0,0,1,152,259.28Z" transform="translate(828 11662)" fill="#4fa6a2"/>
+  </g>
+</svg>

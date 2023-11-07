@@ -8,25 +8,32 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://use.typekit.net/kqc5tzy.css">
     <link rel="stylesheet" href="https://use.typekit.net/xbx5mdl.css">
+    <link rel="icon" href="/images/SVG/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="js/script.js">
 </head>
 <body>
     <!-- Header Section -->
     <header>
-        <nav>
-            <div class="container-nav">
-                <img src="/images/SVG/svg-white.svg" class="logo" ></img>
+        <div class="container-nav">
+            <img src="/images/SVG/svg-white.svg" alt="Logo" class="logo">
+            <nav>
+                <button class="hamburger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
                 <ul>
+                    <li><a href="#" class="close-menu">Close</a></li>
                     <li><a href="arts-culture.html">Arts&Culture</a></li>
-                    <li><a href="#">Events</a></li>
+                    <li><a href="events.html">Events</a></li>
                     <li><a href="#">Shopping</a></li>
-                    <li><a href="#">Plan</a></li>
+                    <li><a href="plan.html">Plan</a></li>
                     <li><a href="index.html">
-                        <img src="images/SVG/icon-account.svg" alt="account icon"class="account-icon">
+                        <img src="images/SVG/icon-account.svg" alt="account icon" class="account-icon">
                     </a></li>
                 </ul>
-            </div>
-            
-        </nav>
+            </nav>
+        </div>
         <div class="search-bar">
             <input type="text" id="search-input" placeholder="Search...">
             <select id="filter">
@@ -37,19 +44,19 @@
             </select>
             <button id="search-button">Search</button>
         </div>
-        <!-- Activate when figured out 
-        <div class="results">
-        </div>-->
+        <!-- <div class="results">
+        </div> -->
     </header>
 
     <!-- Hero Section -->
-    <section class="hero">
-        <div class="container-culture-hero">
-            <h2>Arts & <span class="culture-text">Culture</span></h2>
-        </div>
-    </section>
+
+    <div class="hero-image">
+        <div class="hero-background-culture"></div>
+        <div class="overlay-text">arts & culture</div>
+    </div>
+
     <div class="page-nav">
-        <h2>Home > arts & culture > <span class="nav-text">hpbc</span></h2>
+        <h2>Home > Arts & Culture > <span class="nav-text">HPBC</span></h2>
     </div>
     
     <!-- Spotlight Section -->
@@ -63,42 +70,47 @@
         <div class="hero-container">
             <div class="hero-image">
                 <img src="images/SVG/hpbc-fixed.svg" alt="outside hyde park book club" class="bookclub"><div class="bc-flex">
-                    <div class="info-flex">
-                        <h1>Information</h1>
-                        <h3>https://www.hydeparkbookclub.co.uk/</h3>
-                        <h2>27-29 Headingley Lane LS6 1BL</h2>
-                        <h1>01132444105</h1>
-                    </div>
                 </div>
                 <div class="bc-text">
                     <p>a mini-hub of culture, pleasantly positioned in one of Leeds' most prolific student areas Hyde Park, that offers everything between spoken word Poetry, live gigs from young artists on the rise, vegan nibbles too good to be true, comedy nights and recurring performances/events. During student season, you can expect diverse events every week from a "safe-space-first" staff who are very attentive to social injustices.</p>
                 </div>
             </div>
                  <!-- Options Section -->
-            <div class="flexbox">
-                <div class="text">
-                    <h2>add review</h2>
+
+                 <div class="info-flex">
+                    <h1>Information</h1>
+                    <h3>https://www.hydeparkbookclub.co.uk/</h3>
+                    <h4>27-29 Headingley Lane LS61BL</h4>
+                    <h1>01132444105</h1>
                 </div>
-                <div class="icon">
-                    <img src="images/SVG/icon-reviw.svg" alt="review">
-                </div>
-            </div>
-            <div class="flexbox">
-                <div class="text">
-                    <h2>save to list</h2>
-                </div>
-                <div class="icon">
-                    <img src="images/SVG/icon-save.svg" alt="save">
-                </div>
-            </div>
-            <div class="flexbox">
-                <div class="text">
-                    <h2>more like</h2>
-                </div>
-                <div class="icon">
-                    <img src="images/SVG/icon-more.svg" alt="more">
-                </div>
-            </div>
+
+                 <div class="icons-container">
+                    <div class="flexbox">
+                        <div class="text">
+                            <h2>add review</h2>
+                        </div>
+                        <div class="icon">
+                            <img src="images/SVG/icon-reviw.svg" alt="review">
+                        </div>
+                    </div>
+                    <div class="flexbox">
+                        <div class="text">
+                            <h2>save to list</h2>
+                        </div>
+                        <div class="icon">
+                            <img src="images/SVG/icon-save.svg" alt="save">
+                        </div>
+                    </div>
+                    <div class="flexbox">
+                        <div class="text">
+                            <h2>more like</h2>
+                        </div>
+                        <div class="icon">
+                            <img src="images/SVG/icon-more.svg" alt="more">
+                        </div>
+                    </div>
+                 </div>
+            
         </div>
              <!-- Reviews Section -->
         <div class="grid-container">
@@ -118,22 +130,16 @@
     </section>
 
     <!-- Contact Section -->
-    <section class="contact">
-        <div class="container">
-            <h2>Save your dream trip</h2>
-            <p>create an account here.</p>
-            <!-- Add contact form or contact information here -->
-        </div>
-    </section>
+    
 
     <!-- Footer Section -->
     <footer>
-        <div class="container">
+        <div class="footer-container">
             <p>&copy; 2023 GGDMN. All Rights Reserved.</p>
         </div>
     </footer>
 
     <!-- JavaScript scripts here -->
-    
+    <script src="js/script.js"></script>
 </body>
 </html>

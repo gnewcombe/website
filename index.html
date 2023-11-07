@@ -8,24 +8,32 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://use.typekit.net/kqc5tzy.css">
     <link rel="stylesheet" href="https://use.typekit.net/xbx5mdl.css">
+    <link rel="icon" href="/images/SVG/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="js/script.js">
 </head>
 <body>
     <!-- Header Section -->
     <header>
-        <nav>
-            <div class="container-nav">
-                <img src="/images/SVG/svg-white.svg" class="logo"></img>
+        <div class="container-nav">
+            <img src="/images/SVG/svg-white.svg" alt="Logo" class="logo">
+            <nav>
+                <button class="hamburger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
                 <ul>
+                    <li><a href="#" class="close-menu">Close</a></li>
                     <li><a href="arts-culture.html">Arts&Culture</a></li>
-                    <li><a href="#">Events</a></li>
+                    <li><a href="events.html">Events</a></li>
                     <li><a href="#">Shopping</a></li>
-                    <li><a href="#">Plan</a></li>
+                    <li><a href="plan.html">Plan</a></li>
                     <li><a href="index.html">
-                        <img src="images/SVG/icon-account.svg" alt="account icon"class="account-icon">
+                        <img src="images/SVG/icon-account.svg" alt="account icon" class="account-icon">
                     </a></li>
                 </ul>
-            </div>
-        </nav>
+            </nav>
+        </div>
         <div class="search-bar">
             <input type="text" id="search-input" placeholder="Search...">
             <select id="filter">
@@ -36,24 +44,29 @@
             </select>
             <button id="search-button">Search</button>
         </div>
-        <!-- Activate when figured out 
-        <div class="results">
-        </div>-->
+        <!-- <div class="results">
+        </div> -->
     </header>
 
     <!-- Hero Section -->
-    <section class="hero">
-        <div class="container-hero">
-            <h2>Where to <span class="next-text">next?</span></h2>
-            <a href="#" class="btn">Learn More</a>
-        </div>
-    </section>
+
+    
+    <div class="hero-image">
+        <div class="hero-background-index"></div>
+        <div class="overlay-text">where to next?</div>
+    </div>
+
+    <div class="page-nav">
+        <h2><span class="nav-text">Home</span></h2>
+    </div>
 
     <!-- About Section -->
     <section class="about">
         <div class="container-about">
-            <h2>young at 'art</h2>
-            <h3>what moves your heart?</h3>
+            <h1>young at 'art</h1>
+            <div class="sub-text">
+                <h2>what moves your <span class="italic">heart?</span></h2>
+            </div>
             <p>Bringing you into the know with what's on in  Leeds and cultivating a unique experience designed by you.</p>
         </div>
     </section>
@@ -83,7 +96,7 @@
     <!-- Our Picks Section -->
     <section class="recommendations">
         <div class="container">
-            <h2>Our Picks</h2>
+            <h2 class="picks">Our Picks</h2>
             <div class="recommendations-item">
                 <img src="/images/hpbc.jpeg" alt="HPBC recommendation">
                 <h3>Hyde Park Book Club</h3>
@@ -100,20 +113,47 @@
     <!-- Contact Section -->
     <section class="contact">
         <div class="container">
+            <img src="images/SVG/sign-in.svg" alt="sign in icon" class="sign-img">
             <h2>Save your dream trip</h2>
-            <p>create an account here.</p>
+            <p>Make an account for free and start making memories gain access to monthly newsletters & more..</p>
+            <button class="sign-up">sign up</button>
             <!-- Add contact form or contact information here -->
         </div>
     </section>
 
     <!-- Footer Section -->
     <footer>
-        <div class="container">
-            <p>&copy; 2023 GGDMN. All Rights Reserved.</p>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="images/SVG/svg-white.svg" alt="young at art">
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Search</a></li>
+                    <li><a href="#">Sign up</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <ul>
+                    <li><a href="#"><img src="images/fc-icon.png" alt=""><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#"><img src="images/tw-icon.png" alt=""><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><img src="images/in-icon.png" alt=""><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+            
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2023 Young at 'Art. All rights reserved.</p>
+            
         </div>
     </footer>
+    
 
     <!-- JavaScript scripts here -->
-    
+    <script src="js/script.js"></script>
 </body>
 </html>
