@@ -177,6 +177,54 @@ nav a:first-child {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     
 }
+/* 
+About section responsiveness  */
+
+.about {
+    background-color: #f4f4f4;
+    padding: 40px;
+}
+
+.container-about {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+.sub-text h2 {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+p {
+    font-size: 18px;
+}
+
+/* Media query for screens with a maximum width of 768px (typical mobile width) */
+@media screen and (max-width: 768px) {
+    .about {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .sub-text h2 {
+        font-size: 18px;
+        margin: 10px 0;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
+
 
 /* Hero Section style */
 
@@ -250,6 +298,7 @@ nav a:first-child {
 }
 
 /* services section style */
+
 .image-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -405,7 +454,7 @@ footer {
 }
 
 .footer-logo img {
-    max-width: 1000px;
+    min-width: 150px;
     height: auto;
 }
 
@@ -425,6 +474,7 @@ footer {
     font-size: 14px;
     
 }
+
 
 .footer-social i {
     font-size: 24px;
