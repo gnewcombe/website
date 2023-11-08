@@ -507,10 +507,19 @@ footer {
         max-width: 80px;
     }
 
-    .footer-links ul,
-    .footer-social ul {
+    .footer-links ul {
         flex-direction: column;
         text-align: center;
+        font-size: 35px;
+    }
+
+    .footer-social img {
+        display: flex;
+        max-width: 40px;
+        height: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+        
     }
 
     .footer-links a,
@@ -657,13 +666,14 @@ Review flex box section */
 
     .flexbox {
         margin-bottom: 20px;
+        justify-content: ;
     }
 }
 
 .info-flex {
     display: grid;
     justify-content: right;
-    margin: 1em;
+    margin: 2em;
     
 }
 
