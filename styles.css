@@ -447,6 +447,7 @@ p {
 }
 
 
+
 /* footer styles */
 
 footer {
@@ -477,6 +478,15 @@ footer {
     
 }
 
+.footer-social img {
+    max-width: 80px;
+}
+
+.footer-social {
+    margin-top: 1.5em;
+    padding: 1em;
+}
+
 .footer-links a,
 .footer-social a {
     text-decoration: none;
@@ -486,11 +496,33 @@ footer {
     
 }
 
+/* Media query for screens with a maximum width of 768px (typical mobile width) */
+@media screen and (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-logo img {
+        max-width: 80px;
+    }
+
+    .footer-links ul,
+    .footer-social ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-links a,
+    .footer-social a {
+        margin: 10px 0;
+    }
+}
 
 .footer-social i {
     font-size: 24px;
-    
 }
+
 
 .footer-bottom {
     text-align: center;
@@ -604,7 +636,6 @@ Review flex box section */
 .flexbox {
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 .text h2 {
@@ -633,6 +664,7 @@ Review flex box section */
     display: grid;
     justify-content: right;
     margin: 1em;
+    
 }
 
 .info-flex h3 {
@@ -833,6 +865,7 @@ label[for="start-date"], label[for="end-date"], label[for="activity"] {
 
 #portfolio h2, h3{
     margin-top: 20px;
+    padding-top: 2em;
 }
 
 
@@ -846,6 +879,7 @@ label[for="start-date"], label[for="end-date"], label[for="activity"] {
     margin-top: 20px;
     margin-left: 20px;
     margin-right: 20px;
+    padding-bottom: 4em;
 }
 
 .portfolio-item {
@@ -900,8 +934,10 @@ label[for="start-date"], label[for="end-date"], label[for="activity"] {
 @media (min-width: 750px) {}
 
 @media (max-width: 850px) {
+
     .portfolio-grid {
         grid-template-columns: 1fr; /* Single column layout */
+        padding-bottom: 5em;
     }
 
     .container-nav ul {
