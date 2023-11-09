@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="https://use.typekit.net/kqc5tzy.css">
     <link rel="stylesheet" href="https://use.typekit.net/xbx5mdl.css">
     <link rel="icon" href="/images/SVG/favicon.svg" type="image/x-icon">
-    <link rel="stylesheet" href="js/script.js">
     <title>YOUNG AT 'ART</title>
 </head>
 
@@ -24,10 +23,10 @@
                 </button>
                 <ul>
                     <li><a href="#" class="close-menu">Close</a></li>
-                    <li><a href="arts-culture.html">Arts&Culture</a></li>
+                    <li><a href="index.html">Home</a></li>                    <li><a href="arts-culture.html">Arts&Culture</a></li>
                     <li><a href="events.html">Events</a></li>
                     <li><a href="#">Shopping</a></li>
-                    <li><a href="plan.html">Plan</a></li>
+                    <li><a href="plan.html"class="plan-select">Plan</a></li>
                     <li><a href="index.html">
                         <img src="images/SVG/icon-account.svg" alt="account icon" class="account-icon">
                     </a></li>
@@ -81,12 +80,26 @@
         </div>
 
         <section class="contact">
-            <div class="container">
+            <div class="contact-container">
                 <img src="images/SVG/sign-in.svg" alt="sign in icon" class="sign-img">
                 <h2>Save your dream trip</h2>
                 <p>Make an account for free and start making memories gain access to monthly newsletters & more..</p>
                 <button class="sign-up">sign up</button>
-                <!-- Add contact form or contact information here -->
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Welcome</label>
+                        <input type="text" id="name" name="name" placeholder="Enter a' userame" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">To The</label>
+                        <input type="email" id="email" name="email" placeholder="Pop in ya' email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Club</label>
+                        <textarea id="message" name="message" placeholder="Your Message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
             </div>
         </section>
 
